@@ -18,9 +18,32 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "vendor/owl-carousel/owl.carousel.css",
+        "vendor/owl-carousel/owl.theme.css",
+        "vendor/owl-carousel/owl.transitions.css",
+        "vendor/font-awesome/css/font-awesome.min.css",
+        "vendor/magnific-popup/magnific-popup.css",
+        "vendor/formstone/background.css",
+        "vendor/animate.css/animate.min.css",
+        "css/vitality-red.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "vendor/js/cbpAnimatedHeader.js",
+
+        "vendor/jquery.easing/jquery.easing.min.js",
+        "vendor/owl-carousel/owl.carousel.js",
+        "vendor/magnific-popup/jquery.magnific-popup.min.js",
+        "vendor/formstone/core.js",
+        "vendor/formstone/transition.js",
+        "vendor/formstone/background.js",
+        "vendor/wow/wow.min.js",
+        "vendor/mixitup/jquery.mixitup.js",
+        "vendor/js/vitality.js"
+        ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
