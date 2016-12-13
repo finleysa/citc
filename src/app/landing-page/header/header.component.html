@@ -1,11 +1,35 @@
-<header style="background-image: url('assets/img/agency/backgrounds/bg-header.jpg');">
-    <div class="intro-content">
-        <img src="assets/img/logo-white.png" class="img-responsive img-centered" alt="">
-        <!-- <div class="brand-name">CITC</div> -->
-        <!-- <hr class="colored"> -->
-        <div class="brand-name-subtext">Critical Infrastructure Technology Consultancy</div>
-    </div>
-    <div class="scroll-down">
-        <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
+<header style="background: url(http://astonmartin.blob.core.windows.net/sitefinity/DB11/rev/homepage/hero.jpg)">
+    <div class="row" style="height: 100%;">
+
+      <div id="solutions"
+      routerLink="/solutions"
+      routerLinkActive="active"
+      class="col-sm-4 wow fadeIn thirds text-center"
+      (mouseenter)='mouseEventSolutions($event)'
+      (mouseleave)='mouseEventSolutions($event)'
+      [ngClass]="{solutions: backgroundSolutions, fadeIn: backgroundSolutions}">
+          <h3 class="text-center">Solutions</h3>
+      </div>
+
+      <div id="products"
+        routerLink="/products"
+        routerLinkActive="active"
+        class="col-sm-4 wow fadeIn thirds"
+        (mouseenter)='mouseEventProducts($event)'
+        (mouseleave)='mouseEventProducts($event)'
+        [ngClass]="{products: backgroundProducts, fadeIn: backgroundProducts}">
+          <h3 class="text-center">Products</h3>
+      </div>
+
+      <div id="technology"
+        routerLink="/technology"
+        routerLinkActive="active"
+        class="col-sm-4 wow fadeIn thirds"
+        (mouseenter)='mouseEventTechnology($event)'
+        (mouseleave)='mouseEventTechnology($event)'
+        [ngClass]="{technology: backgroundTechnology, fadeIn: backgroundTechnology}">
+            <h3 class="text-center">Technology</h3>
+      </div>
+
     </div>
 </header>

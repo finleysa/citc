@@ -1,0 +1,50 @@
+body {
+    -webkit-font-feature-settings: "kern", "liga", "pnum";
+    -moz-font-feature-settings: "kern", "liga", "pnum";
+    -ms-font-feature-settings: "kern", "liga", "pnum";
+    font-feature-settings: "kern", "liga", "pnum";
+    -webkit-font-smoothing: antialiased;
+    color: #333 !important;
+    background-color: lightgrey !important;
+    font-family: "OptimaWeb", Optima, Georgia, serif !important;
+    line-height: 1.5 !important;
+    font-weight: 300 !important;
+}
+
+/* CENTER LOGO - BOOTSTRAP OVERRIDE */
+.navbar {
+    position: relative;
+}
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -80px !important;  /* 50% of your logo width */
+    display: block;
+
+    img {
+      margin-top: -10px;
+      height: 70px !important;
+    }
+}
+
+html {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+  }
+}

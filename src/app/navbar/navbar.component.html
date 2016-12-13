@@ -1,4 +1,7 @@
 <!-- NOTE: .navbar-default and .navbar-inverse are both supported with this theme. -->
+<img id="logo" src="assets/img/logo-outline.png" alt="">
+
+<div class="navigation-underlay"></div>
 <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top" [style.navbar-expanded]="showNavBar">
     <div class="container">
         <div class="navbar-header">
@@ -6,26 +9,23 @@
                 <span class="sr-only">Toggle navigation</span>
                 <i class="fa fa-bars"></i> Menu
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
-                <img src="assets/img/logo-white.png" class="img-responsive" alt="">
-            </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a class="page-scroll" href="#page-top"></a>
+                <li>
+                    <a routerLink="/" routerLinkActive="active">Home</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a crouterLink="/about" routerLinkActive="active">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#process">Process</a>
+                    <a routerLink="/solutions" routerLinkActive="active">Solutions</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#work">Projects</a>
+                    <a routerLink="/services" routerLinkActive="active">Services</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a routerLink="/contact" routerLinkActive="active">Contact</a>
                 </li>
             </ul>
         </div>

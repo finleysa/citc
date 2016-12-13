@@ -18,8 +18,8 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css",
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "styles.less",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
         "vendor/owl-carousel/owl.carousel.css",
         "vendor/owl-carousel/owl.theme.css",
         "vendor/owl-carousel/owl.transitions.css",
@@ -32,7 +32,6 @@
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
-        "vendor/js/cbpAnimatedHeader.js",
 
         "vendor/jquery.easing/jquery.easing.min.js",
         "vendor/owl-carousel/owl.carousel.js",
