@@ -26,6 +26,7 @@ import { IcatchComponent } from './solutions-page/air/icatch/icatch.component';
 import { ComintComponent } from './solutions-page/air/comint/comint.component';
 import { BmsComponent } from './solutions-page/air/bms/bms.component';
 import { AirHeaderComponent } from './solutions-page/air/air-header/air-header.component';
+import { Mx15Component } from './solutions-page/air/mx15/mx15.component';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { AirHeaderComponent } from './solutions-page/air/air-header/air-header.c
     ComintComponent,
     BmsComponent,
     HeaderComponent,
-    AirHeaderComponent
+    AirHeaderComponent,
+    Mx15Component
   ],
   imports: [
     BrowserModule,
