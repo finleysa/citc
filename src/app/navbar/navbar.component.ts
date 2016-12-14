@@ -7,9 +7,6 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  @Input()
-  showNavBar: boolean = false;
-
   constructor() { }
 
   ngOnInit() {

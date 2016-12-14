@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-icatch',
   templateUrl: './icatch.component.html',
-  styleUrls: ['./icatch.component.css']
+  styleUrls: ['./icatch.component.less']
 })
 export class IcatchComponent implements OnInit {
 
