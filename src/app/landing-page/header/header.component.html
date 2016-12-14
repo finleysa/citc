@@ -1,33 +1,41 @@
-<header style="background: url(http://astonmartin.blob.core.windows.net/sitefinity/DB11/rev/homepage/hero.jpg)">
+<div class="navigation-underlay"></div>
+
+<header style="background: url()">
     <div class="row" style="height: 100%;">
 
       <div id="solutions"
       routerLink="/solutions"
       routerLinkActive="active"
-      class="col-sm-4 wow fadeIn thirds text-center"
+      class="col-sm-4 wow thirds"
+      data-wow-delay=".2s"
       (mouseenter)='mouseEventSolutions($event)'
       (mouseleave)='mouseEventSolutions($event)'
-      [ngClass]="{solutions: backgroundSolutions, fadeIn: backgroundSolutions}">
+      [ngClass]="{solutions: backgroundSolutions,
+        fadeIn: backgroundSolutions}">
           <h3 class="text-center">Solutions</h3>
       </div>
 
       <div id="products"
         routerLink="/products"
         routerLinkActive="active"
-        class="col-sm-4 wow fadeIn thirds"
+        class="col-sm-4 wow thirds"
+        data-wow-delay=".2s"
         (mouseenter)='mouseEventProducts($event)'
         (mouseleave)='mouseEventProducts($event)'
-        [ngClass]="{products: backgroundProducts, fadeIn: backgroundProducts}">
+        [ngClass]="{products: backgroundProducts,
+          fadeIn: backgroundProducts}">
           <h3 class="text-center">Products</h3>
       </div>
 
       <div id="technology"
         routerLink="/technology"
         routerLinkActive="active"
-        class="col-sm-4 wow fadeIn thirds"
+        class="col-sm-4 wow thirds"
+        data-wow-delay=".2s"
         (mouseenter)='mouseEventTechnology($event)'
         (mouseleave)='mouseEventTechnology($event)'
-        [ngClass]="{technology: backgroundTechnology, fadeIn: backgroundTechnology}">
+        [ngClass]="{technology: backgroundTechnology,
+          fadeIn: backgroundTechnology}">
             <h3 class="text-center">Technology</h3>
       </div>
 

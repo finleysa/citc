@@ -1,0 +1,43 @@
+<div class="navigation-underlay"></div>
+
+<header style="background: url()">
+    <div class="row" style="height: 100%;">
+
+      <div id="air"
+      routerLink="/solutions/air"
+      routerLinkActive="active"
+      class="col-sm-4 wow thirds"
+      data-wow-delay=".2s"
+      (mouseenter)='mouseEventAir($event)'
+      (mouseleave)='mouseEventAir($event)'
+      [ngClass]="{air: backgroundAir,
+        fadeIn: backgroundAir}">
+          <h3 class="text-center">Air</h3>
+      </div>
+
+      <div id="land"
+        routerLink="/solutions/land"
+        routerLinkActive="active"
+        class="col-sm-4 wow thirds"
+        data-wow-delay=".2s"
+        (mouseenter)='mouseEventLand($event)'
+        (mouseleave)='mouseEventLand($event)'
+        [ngClass]="{land: backgroundLand,
+          fadeIn: backgroundLand}">
+          <h3 class="text-center">Land</h3>
+      </div>
+
+      <div id="sea"
+        routerLink="/solutions/sea"
+        routerLinkActive="active"
+        class="col-sm-4 wow thirds"
+        data-wow-delay=".2s"
+        (mouseenter)='mouseEventSea($event)'
+        (mouseleave)='mouseEventSea($event)'
+        [ngClass]="{sea: backgroundSea,
+          fadeIn: backgroundSea}">
+            <h3 class="text-center">Sea</h3>
+      </div>
+
+    </div>
+</header>
