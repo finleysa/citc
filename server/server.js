@@ -8,7 +8,7 @@ var app = express()
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(__dirname + '../dist'))
+app.use('/', express.static(path.join(__dirname, '../dist')));
 app.use('/node_modules', express.static(path.join(__dirname, '../node_modules')));
 app.get('/', function(req, res) {
   res.status(200).sendfile('dist/index.html');
@@ -44,4 +44,4 @@ app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
 });
 
-module.exports = app;
+// module.exports = app;
