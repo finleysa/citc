@@ -1,14 +1,14 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { LandingPageComponent } from './landing-page/landing-page/landing-page.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AboutComponent } from './landing-page/about/about.component';
 import { ContactComponent } from './landing-page/contact/contact.component';
 import { ServicesComponent } from './landing-page/services/services.component';
 import { ProductsComponent } from './landing-page/products/products.component';
 import { TechnologyComponent } from './landing-page/technology/technology.component';
 
-import { SolutionsComponent } from './solutions-page/solutions/solutions.component';
+import { SolutionsComponent } from './solutions-page/solutions.component';
 import { AirComponent } from './solutions-page/air/air.component';
 import { LandComponent } from './solutions-page/land/land.component';
 import { SeaComponent } from './solutions-page/sea/sea.component';

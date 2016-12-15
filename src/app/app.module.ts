@@ -12,8 +12,8 @@ import { HeaderComponent } from './landing-page/header/header.component';
 import { ContactComponent } from './landing-page/contact/contact.component';
 import { ServicesComponent } from './landing-page/services/services.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { LandingPageComponent } from './landing-page/landing-page/landing-page.component';
-import { SolutionsComponent } from './solutions-page/solutions/solutions.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { SolutionsComponent } from './solutions-page/solutions.component';
 import { ProductsComponent } from './landing-page/products/products.component';
 import { TechnologyComponent } from './landing-page/technology/technology.component';
 

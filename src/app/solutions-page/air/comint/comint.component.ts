@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-comint',
   templateUrl: './comint.component.html',
-  styleUrls: ['./comint.component.css']
+  styleUrls: ['comint.component.less']
 })
 export class ComintComponent implements OnInit {
 

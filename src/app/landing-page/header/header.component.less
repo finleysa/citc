@@ -15,82 +15,94 @@ header {
 }
 
 .thirds {
-  color: white !important;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  box-orient: vertical;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  box-direction: normal;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-direction: column;
-  -webkit-box-pack: end;
-  -moz-box-pack: end;
-  box-pack: end;
-  -webkit-justify-content: flex-end;
-  -moz-justify-content: flex-end;
-  -ms-justify-content: flex-end;
-  -o-justify-content: flex-end;
-  justify-content: flex-end;
-  -ms-flex-pack: end;
-  padding: 3em;
-  height: 100%;
-  overflow: hidden;
-  background: none !important;
-  position: relative;
-  z-index: 1;
+    color: #fff !important;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    -o-justify-content: flex-end;
+    justify-content: flex-end;
+    -ms-flex-pack: end;
+    height: 100%;
+    overflow: hidden;
+    background: none !important;
+    position: relative;
+    z-index: 1;
 
   h3 {
     font-size: 2.61792em;
     font-family: "OptimaWeb", Optima, Georgia, serif;
     line-height: 1;
     font-weight: 300;
-    margin: 11px 0;
     text-transform: uppercase;
-    bottom: 3em;
   }
 }
 
-.solutions {
-  background-image: url('assets/img/backgrounds/bg-4.jpg') !important;
-}
-
-.products {
-  background-image: url('assets/img/backgrounds/bg-footer.jpg') !important;
-}
-
-.technology {
-  background-image: url('assets/img/backgrounds/tech.jpg') !important;
-}
 
 @media (max-width: 768px) {
   header {
-    height: 100%;
+    padding-top: 50px;
+  }
+
+  #solutions {
+    height: 15em;
+    background-image: url('assets/img/backgrounds/airlandsea.jpg') !important;
+  }
+
+  #products {
+    height: 15em;
+    background-image: url('assets/img/backgrounds/bg-footer.jpg') !important;
+  }
+
+  #technology {
+    height: 15em;
+    background-image: url('assets/img/backgrounds/tech.jpg') !important;
   }
 }
 
 @media (min-width: 768px) {
-  .thirds {
-    color: white;
-    height: 100%;
 
+  h3 {
+    bottom: 3em;
+  }
+
+  .solutions {
+    background-image: url('assets/img/backgrounds/airlandsea.jpg') !important;
+  }
+
+  .products {
+    background-image: url('assets/img/backgrounds/bg-footer.jpg') !important;
+  }
+
+  .technology {
+    background-image: url('assets/img/backgrounds/tech.jpg') !important;
   }
 }

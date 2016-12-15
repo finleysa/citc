@@ -1,24 +1,8 @@
-.solutions-background {
-
-}
-
 header {
   background-color: #fff;
   color: #000;
 }
 
-#air-section {
-  background-color: lightgrey;
-
-}
-
-#land-section {
-  background-color: tan;
-}
-
-#sea-section {
-  background-color: lightblue;
-}
 
 header {
   position: absolute;
@@ -85,34 +69,51 @@ header {
     font-family: "OptimaWeb", Optima, Georgia, serif;
     line-height: 1;
     font-weight: 300;
-    margin: 11px 0;
     text-transform: uppercase;
-    bottom: 3em;
   }
+
 }
 
-.air {
-  background-image: url('assets/img/backgrounds/bg-4.jpg') !important;
-}
-
-.land {
-  background-image: url('assets/img/backgrounds/bg-footer.jpg') !important;
-}
-
-.sea {
-  background-image: url('assets/img/backgrounds/tech.jpg') !important;
-}
 
 @media (max-width: 768px) {
   header {
-    height: 100%;
+    padding-top: 50px;
+  }
+
+  .thirds {
+
+  }
+
+  #air-section {
+    height: 15em;
+    background-image: url('assets/img/backgrounds/airlandsea.jpg') !important;
+  }
+
+  #land-section {
+    height: 15em;
+    background-image: url('assets/img/backgrounds/bg-footer.jpg') !important;
+  }
+
+  #sea-section {
+    height: 15em;
+    background-image: url('assets/img/backgrounds/tech.jpg') !important;
   }
 }
 
 @media (min-width: 768px) {
-  .thirds {
-    color: white;
-    height: 100%;
+  .air {
+    background-image: url('assets/img/backgrounds/bg-4.jpg') !important;
+  }
 
+  .land {
+    background-image: url('assets/img/backgrounds/bg-footer.jpg') !important;
+  }
+
+  .sea {
+    background-image: url('assets/img/backgrounds/tech.jpg') !important;
+  }
+
+  h3 {
+    bottom: 3em;
   }
 }
