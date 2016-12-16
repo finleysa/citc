@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MailchimpService } from "../../services/mailchimp.service";
+import { FormsModule, FormControl, ReactiveFormsModule } from "@angular/forms";
+
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(private mailChimpService: MailchimpService) { }
+
+  contact = {}
 
   ngOnInit() {
+  }
+
+  submitContact() {
+    this.mailChimpService.sendEmail(this.contact);
+    console.log(this.contact);
   }
 
 }

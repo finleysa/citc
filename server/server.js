@@ -10,7 +10,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/', express.static(path.join(__dirname, '../dist')));
 app.use('/node_modules', express.static(path.join(__dirname, '../node_modules')));
-app.get('/', function(req, res) {
+app.post('/contact/email', function(req, res) {
+  console.log(req.body);
+});
+app.get('*', function(req, res) {
   res.status(200).sendfile('dist/index.html');
 })
 

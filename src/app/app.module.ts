@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing, appRoutingProviders }  from './app.routing';
 
@@ -27,6 +27,8 @@ import { ComintComponent } from './solutions-page/air/comint/comint.component';
 import { BmsComponent } from './solutions-page/air/bms/bms.component';
 import { AirHeaderComponent } from './solutions-page/air/air-header/air-header.component';
 import { Mx15Component } from './solutions-page/air/mx15/mx15.component';
+
+import { MailchimpService } from "./services/mailchimp.service";
 
 
 @NgModule({
@@ -58,9 +60,10 @@ import { Mx15Component } from './solutions-page/air/mx15/mx15.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    ReactiveFormsModule,
     routing
   ],
-  providers: [],
+  providers: [MailchimpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
