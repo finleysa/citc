@@ -14,7 +14,7 @@ app.post('/contact/email', function(req, res) {
   console.log(req.body);
 });
 app.get('*', function(req, res) {
-  res.status(200).sendfile('citc/dist/index.html');
+  res.status(200).sendFile(path.join(__dirname, '../dist/index.html'));
 })
 
 
