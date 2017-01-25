@@ -5,7 +5,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AboutComponent } from './landing-page/about/about.component';
 import { ContactComponent } from './landing-page/contact/contact.component';
 import { ServicesComponent } from './landing-page/services/services.component';
-import { ProductsComponent } from './landing-page/products/products.component';
+import { ProductsComponent } from './landing-page/projects/projects.component';
 import { TechnologyComponent } from './landing-page/technology/technology.component';
 
 import { SolutionsComponent } from './solutions-page/solutions.component';
@@ -41,7 +41,7 @@ const appRoutes: Routes = [
       }
     ]
   },
-  { path: 'products', component: ProductsComponent },
+  { path: 'projects', component: ProductsComponent },
   { path: 'technology', component: TechnologyComponent },
 
   { path: '**', component: LandingPageComponent }

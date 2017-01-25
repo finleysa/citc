@@ -14,7 +14,7 @@ import { ServicesComponent } from './landing-page/services/services.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SolutionsComponent } from './solutions-page/solutions.component';
-import { ProductsComponent } from './landing-page/products/products.component';
+import { ProductsComponent } from './landing-page/projects/projects.component';
 import { TechnologyComponent } from './landing-page/technology/technology.component';
 
 import { P750Component } from './solutions-page/air/p750/p750.component';

@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.less']
 })
 export class HeaderComponent implements OnInit {
-  backgroundSolutions: boolean = false;
-  backgroundProducts: boolean = false;
-  backgroundTechnology: boolean = false;
+  backgroundSolutions: boolean = true;
+  backgroundProjects: boolean = true;
+  backgroundTechnology: boolean = true;
 
   constructor() { }
 
@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
   }
 
   mouseEventProducts(event) {
-    this.backgroundProducts = !this.backgroundProducts;
+    this.backgroundProjects = !this.backgroundProjects;
   }
 
   mouseEventTechnology(event) {
