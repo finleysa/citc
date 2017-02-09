@@ -13,22 +13,24 @@ import { ContactComponent } from './landing-page/contact/contact.component';
 import { ServicesComponent } from './landing-page/services/services.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { SolutionsComponent } from './solutions-page/solutions.component';
-import { ProductsComponent } from './landing-page/projects/projects.component';
+import { ProjectsComponent } from './landing-page/projects/projects.component';
 import { TechnologyComponent } from './landing-page/technology/technology.component';
 
-import { P750Component } from './solutions-page/air/p750/p750.component';
-import { AirComponent } from './solutions-page/air/air.component';
-import { LandComponent } from './solutions-page/land/land.component';
-import { SeaComponent } from './solutions-page/sea/sea.component';
-import { RoadrunnerComponent } from './solutions-page/air/roadrunner/roadrunner.component';
-import { IcatchComponent } from './solutions-page/air/icatch/icatch.component';
-import { ComintComponent } from './solutions-page/air/comint/comint.component';
-import { BmsComponent } from './solutions-page/air/bms/bms.component';
-import { AirHeaderComponent } from './solutions-page/air/air-header/air-header.component';
-import { Mx15Component } from './solutions-page/air/mx15/mx15.component';
+import { P750Component } from './landing-page/projects/air/p750/p750.component';
+import { AirComponent } from './landing-page/projects/air/air.component';
+import { LandComponent } from './landing-page/projects/land/land.component';
+import { SeaComponent } from './landing-page/projects/sea/sea.component';
+import { RoadrunnerComponent } from './landing-page/projects/air/roadrunner/roadrunner.component';
+import { IcatchComponent } from './landing-page/projects/air/icatch/icatch.component';
+import { ComintComponent } from './landing-page/projects/air/comint/comint.component';
+import { BmsComponent } from './landing-page/projects/air/bms/bms.component';
+import { AirHeaderComponent } from './landing-page/projects/air/air-header/air-header.component';
+import { Mx15Component } from './landing-page/projects/air/mx15/mx15.component';
 
 import { MailchimpService } from "./services/mailchimp.service";
+import { AirDropdownComponent } from './landing-page/projects/air/air-dropdown/air-dropdown.component';
+import { SeaDropdownComponent } from './landing-page/projects/sea/sea-dropdown/sea-dropdown.component';
+import { LandDropdownComponent } from './landing-page/projects/land/land-dropdown/land-dropdown.component';
 
 
 @NgModule({
@@ -42,8 +44,8 @@ import { MailchimpService } from "./services/mailchimp.service";
     P750Component,
     PageNotFoundComponent,
     LandingPageComponent,
-    SolutionsComponent,
-    ProductsComponent,
+    ProjectsComponent,
+    ProjectsComponent,
     TechnologyComponent,
     AirComponent,
     LandComponent,
@@ -54,7 +56,10 @@ import { MailchimpService } from "./services/mailchimp.service";
     BmsComponent,
     HeaderComponent,
     AirHeaderComponent,
-    Mx15Component
+    Mx15Component,
+    AirDropdownComponent,
+    SeaDropdownComponent,
+    LandDropdownComponent
   ],
   imports: [
     BrowserModule,

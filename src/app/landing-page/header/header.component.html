@@ -1,7 +1,6 @@
-<header style="background: url()">
-    <div class="row" style="height: 100%;">
-
-      <div id="projects"
+<header>
+    <div class="row" style="height: 100%">
+      <div id="solutions"
         routerLink="/solutions"
         routerLinkActive="active"
         class="col-sm-4 wow thirds"
@@ -11,30 +10,30 @@
         <h3 class="text-center fadeIn wow" data-wow-delay=".2s">Solutions</h3>
       </div>
 
-      <div id="solutions"
-        routerLink="/technology"
+      <div id="services"
+        routerLink="/services"
         routerLinkActive="active"
-        class="col-sm-4 thirds"
+        class="col-sm-4 thirds services"
         (mouseenter)='mouseEventTechnology($event)'
         (mouseleave)='mouseEventTechnology($event)'
         [ngClass]="{technology: backgroundTechnology}">
-        <h3 class="text-center fadeIn wow" data-wow-delay=".2s">Technology</h3>
+        <h3 class="text-center fadeIn wow" data-wow-delay=".2s">Services</h3>
       </div>
 
       <div id="products"
-           routerLink="/products"
-           routerLinkActive="active"
-           class="col-sm-4 thirds"
-           (mouseenter)='mouseEventProducts($event)'
-           (mouseleave)='mouseEventProducts($event)'
-           [ngClass]="{products: backgroundProjects}">
-        <div *ngIf="backgroundProjects">
+         routerLink="/projects"
+         routerLinkActive="active"
+         class="col-sm-4 thirds products"
+         (mouseenter)='mouseEventProducts($event)'
+         (mouseleave)='mouseEventProducts($event)'>
+         <!--[ngClass]="{products: backgroundProjects}">-->
+        <div *ngIf="!backgroundProjects">
           <h3 class="fadeIn wow text-center" data-wow-delay=".2s" style="margin-bottom: 4em">Air</h3>
-          <h3 class="fadeIn wow text-center" data-wow-delay=".4s" style="margin-bottom: 3em">Sea</h3>
-          <h3 class="fadeIn wow text-center" data-wow-delay=".6s" style="margin-bottom: 2em">Land</h3>
+          <h3 class="fadeIn wow text-center" data-wow-delay=".4s" style="margin-bottom: 4em">Sea</h3>
+          <h3 class="fadeIn wow text-center" data-wow-delay=".6s" style="margin-bottom: 1em">Land</h3>
         </div>
-          <h3 class="text-center fadeIn wow" data-wow-delay=".2s">Projects</h3>
+          <h3 *ngIf="backgroundProjects" class="text-center fadeIn wow" data-wow-delay=".2s">Projects</h3>
       </div>
 
-    </div>
+  </div>
 </header>

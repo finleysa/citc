@@ -1,3 +1,61 @@
-<p>
-  products works!
-</p>
+<!--<img id="logo" src="assets/img/logo-outline.png" alt="">-->
+ <!--<div class="row" style="height: 100%;">-->
+
+      <!--<div id="air-section"-->
+      <!--routerLink="/products/air"-->
+      <!--routerLinkActive="active"-->
+      <!--class="col-sm-4 wow thirds"-->
+      <!--data-wow-delay=".2s"-->
+      <!--(mouseenter)='mouseEventAir($event)'-->
+      <!--(mouseleave)='mouseEventAir($event)'-->
+      <!--[ngClass]="{air: backgroundAir,-->
+        <!--fadeIn: backgroundAir}">-->
+          <!--<h3 class="text-center">Air</h3>-->
+      <!--</div>-->
+
+      <!--<div id="land-section"-->
+        <!--routerLink="/products/land"-->
+        <!--routerLinkActive="active"-->
+        <!--class="col-sm-4 wow thirds"-->
+        <!--data-wow-delay=".2s"-->
+        <!--(mouseenter)='mouseEventLand($event)'-->
+        <!--(mouseleave)='mouseEventLand($event)'-->
+        <!--[ngClass]="{land: backgroundLand,-->
+          <!--fadeIn: backgroundLand}">-->
+          <!--<h3 class="text-center">Land</h3>-->
+      <!--</div>-->
+
+      <!--<div id="sea-section"-->
+        <!--routerLink="/products/sea"-->
+        <!--routerLinkActive="active"-->
+        <!--class="col-sm-4 wow thirds"-->
+        <!--data-wow-delay=".2s"-->
+        <!--(mouseenter)='mouseEventSea($event)'-->
+        <!--(mouseleave)='mouseEventSea($event)'-->
+        <!--[ngClass]="{sea: backgroundSea,-->
+          <!--fadeIn: backgroundSea}">-->
+            <!--<h3 class="text-center">Sea</h3>-->
+      <!--</div>-->
+
+    <!--</div>-->
+<div class="row wow fadeIn" data-wow-delay=".6s">
+  <div class="col-sm-offset-1 col-sm-10" data-wow-delay=".1s">
+    <div class="row space">
+      <div class="col-md-4">
+        <h2 class="text-center">AIR</h2>
+        <hr class=" colored">
+        <app-air-dropdown></app-air-dropdown>
+      </div>
+      <div class="col-md-4">
+        <h2 class="text-center">SEA</h2>
+        <hr class=" colored">
+        <app-sea-dropdown></app-sea-dropdown>
+      </div>
+      <div class="col-md-4">
+        <h2 class="text-center">LAND</h2>
+        <hr class=" colored">
+        <app-land-dropdown></app-land-dropdown>
+      </div>
+    </div>
+  </div>
+</div>

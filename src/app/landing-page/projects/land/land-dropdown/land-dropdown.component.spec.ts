@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { SolutionsComponent } from './solutions.component';
+import { LandDropdownComponent } from './land-dropdown.component';
 
-describe('SolutionsComponent', () => {
-  let component: SolutionsComponent;
-  let fixture: ComponentFixture<SolutionsComponent>;
+describe('LandDropdownComponent', () => {
+  let component: LandDropdownComponent;
+  let fixture: ComponentFixture<LandDropdownComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SolutionsComponent ]
+      declarations: [ LandDropdownComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SolutionsComponent);
+    fixture = TestBed.createComponent(LandDropdownComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
