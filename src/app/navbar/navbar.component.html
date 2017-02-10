@@ -8,7 +8,8 @@
                 <span class="sr-only">Toggle navigation</span>
                 <i class="fa fa-bars"></i> Menu
             </button>
-            <a routerLink="/" routerLinkActive="active" class="navbar-brand">
+
+            <a *ngIf="showLogo" routerLink="/" routerLinkActive="active" class="navbar-brand">
                 <img hr src="assets/img/logo-white.png" alt="">
             </a>
         </div>
